@@ -1,0 +1,169 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/grad154/timurbakeev154/blob/main/jupuper.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Программа перевода по коду Хэмминга"
+      ],
+      "metadata": {
+        "id": "Dokk9uAXQ2aw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a='0123456789'\n",
+        "nums=list(a)\n",
+        "print(nums)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QzGEJK5NQs9-",
+        "outputId": "4cccfeee-d247-4ebc-854a-309f82d22f39"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b='0000000 000111 0010110 0011001 0100101 0101010 0110011 0111100 1000011 1001100'\n",
+        "hem=b.split()\n",
+        "print(hem)\n",
+        "for i in range(len(hem)):\n",
+        "  hem[i]=int(hem[i])\n",
+        "print(hem)\n",
+        "#i'comented this"
+      ],
+      "metadata": {
+        "id": "APnZUlTrSFBE",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "bfecd5c6-ce50-4410-f80c-fd35c12ebc97"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['0000000', '000111', '0010110', '0011001', '0100101', '0101010', '0110011', '0111100', '1000011', '1001100']\n",
+            "[0, 111, 10110, 11001, 100101, 101010, 110011, 111100, 1000011, 1001100]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def distance(x,y):\n",
+        "  k=7\n",
+        "  for i in range(7):\n",
+        "    if x%10==y%10:\n",
+        "      k=k-1\n",
+        "    x=x//10\n",
+        "    y=y//10\n",
+        "  return k"
+      ],
+      "metadata": {
+        "id": "KPFZTMTJVQvQ"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cod=int(input(\"код=\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "c77fF3oxWxp_",
+        "outputId": "f8afc922-0bbc-43e0-ff8d-c937b366f895"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "код=7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "min=distance(cod,hem[0])\n",
+        "imin=0\n",
+        "for i in range(10):\n",
+        "  D=distance(cod,hem[i])\n",
+        "  if D<min:\n",
+        "    min=D\n",
+        "    imin=i\n",
+        "if min==0:\n",
+        "  print(f\"Код верный: символ {nums[imin]}\")\n",
+        "elif min==1:\n",
+        "  print(f\"Код исправлен: символ {nums[imin]}\")\n",
+        "else:print(f\"Код неверный\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ULLrpyquXMnx",
+        "outputId": "a38ca95a-e3af-4373-d714-289560fc130e"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Код исправлен: символ 0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
