@@ -9,6 +9,13 @@ CodePen:
 
 https://codepen.io/kirmala
 
+
+wordpress:
+
+https://wordpress.com/home/work8561.wordpress.com
+
+
+
 # описaние проектов 
 
 1. "pythonproject" - работа с базой данных
