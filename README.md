@@ -34,3 +34,11 @@ https://codepen.io/kirmala
   
 10. "морзе.xlsx" - перевод строки в код Морзе
 11. "Нейронка.png" - работа с нейросимулятором
+
+#Работа с SQl
+1. SHOW TABLES
+2. SHOW TABLES
+3. SELECT * FROM users
+4. SELECT * FROM grades
+5. SELECT * FROM users, grades where users.user_id=grades.user_id
+6. SELECT * FROM users where name = 'Кирилл' AND fam = 'Малахов'
