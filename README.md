@@ -53,4 +53,5 @@ https://wordpress.com/home/work8561.wordpress.com
 
 # формулы булевой логики 
 закон ассоциативности
+
 $$ (A \vee B) \vee = A \vee (B \vee C) $$
