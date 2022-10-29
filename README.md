@@ -49,3 +49,8 @@ https://wordpress.com/home/work8561.wordpress.com
 4. SELECT * FROM grades
 5. SELECT * FROM users, grades where users.user_id=grades.user_id
 6. SELECT * FROM users where name = 'Кирилл' AND fam = 'Малахов'
+
+
+#формулы булевой логики 
+закон ассоциативности
+$$(A \vee B) \vee = A \vee (B \vee C)
