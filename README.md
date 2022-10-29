@@ -51,6 +51,6 @@ https://wordpress.com/home/work8561.wordpress.com
 6. SELECT * FROM users where name = 'Кирилл' AND fam = 'Малахов'
 
 
-#формулы булевой логики 
+# формулы булевой логики 
 закон ассоциативности
-$$(A \vee B) \vee = A \vee (B \vee C)
+$$ (A \vee B) \vee = A \vee (B \vee C) $$
