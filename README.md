@@ -55,3 +55,5 @@ https://wordpress.com/home/work8561.wordpress.com
 закон ассоциативности
 
 $$ (A \vee B) \vee = A \vee (B \vee C) $$
+
+![lagrida_latex_editor](https://user-images.githubusercontent.com/80589289/198812820-e676820b-3d29-42e5-afae-4fe0f88c6d2c.png)
