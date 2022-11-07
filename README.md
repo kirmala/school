@@ -57,3 +57,7 @@ https://wordpress.com/home/work8561.wordpress.com
 $$ (A \vee B) \vee = A \vee (B \vee C) $$
 
 ![lagrida_latex_editor](https://user-images.githubusercontent.com/80589289/198812820-e676820b-3d29-42e5-afae-4fe0f88c6d2c.png)
+
+#latex формула
+
+$$ \bar{E}_0^2 = \frac{\sqrt{F\alpha^{2}_{0}}}{(x-1)\cdot x} + \alpha^{2}_{1} + \beta^{2}_{1} $$
