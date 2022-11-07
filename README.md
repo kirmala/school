@@ -60,4 +60,4 @@ $$ (A \vee B) \vee = A \vee (B \vee C) $$
 
 #latex формула
 
-$$ \bar{E}_0^2 = \frac{\sqrt{F\alpha^{2}_{0}}}{(x-1)\cdot x} + \alpha^{2}_{1} + \beta^{2}_{1} $$
+$$ \bar{E}_0^2 = \frac{\sqrt{F\alpha^{2}_{0}}}{(x-1)\cdot x} + \alpha^2_1 + \beta^2_1 $$
